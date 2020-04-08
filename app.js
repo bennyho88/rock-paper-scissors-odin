@@ -79,10 +79,30 @@ function game() {
         console.log('playerscore: ' + playerScore);
         console.log('computerscore: ' + computerScore);
 
+        
+
     }
 
     console.log('Final score player: ' + playerScore);
     console.log('Final score computer: ' + computerScore);
+    decideWinner(playerScore, computerScore);
+    
+}
+
+
+function decideWinner(playerScore, computerScore) {
+
+    console.log('decide player: ' + playerScore);
+    console.log('decide computer: ' + computerScore);
+    
+    if(playerScore > computerScore) {
+        console.log('You won');
+    } else if (playerScore < computerScore) {
+        console.log('sorry, you lost! try again');
+    } else if (playerScore === computerScore) {
+        console.log('it is a draw!');
+    }
+    
 }
 
 game();
