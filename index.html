@@ -11,20 +11,28 @@
     <header>
         <h1>Rock-Paper-Scissors game</h1>
     </header>
-    <main>
-
-        <div >
-            <h1>Computer:</h1> <p class="computer"></p>
-          
+    <main class="main">
+        <div>
+            <h3>Player score: <span id="playerScore"></span></h3>
+            <h3>Computer score: <span id="computerScore"></span></h3>
         </div>
-        <div id="Rock">
-
+        <div>
+            <h2>Please choose your option:</h1>
+            <button type="button" class="rock btn">Rock</button>
+            <button type="button" class="paper btn">Paper</button>
+            <button type="button" class="scissors btn">Scissors</button>
         </div>
-        <div id="Paper">
-
+        <div>
+            <h2>Computer:</h2>
+            <p id="computer"></p>
         </div>
-        <div id="Scissors">
+        <div>
+            <h2 id="result"></h2>
+        </div>
+        <button type="button" id="reset">Reset game</button>
 
+        <div>
+            <h1 id="announcement"></h1>
         </div>
     </main>
     
